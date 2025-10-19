@@ -127,7 +127,7 @@ class LikeCommands(commands.Cog):
                             embed.description = "This UID has already received the maximum likes today.\nAuto-like will try again in 24 hours."
                         
                         embed.set_footer(text=f"🔹 Auto-like executed • DEVOLOPED BY UNKNOWN X!TER")
-                        embed.set_image(url="")
+                        embed.set_image(url="https://ibb.co.com/TM4kTbck")
                         file = discord.File("assets/banned.gif", filename="banned.gif")
                         embed.set_image(url="attachment://banned.gif")
                         await channel.send(f"<@{user_id}>", embed=embed)
@@ -269,7 +269,7 @@ class LikeCommands(commands.Cog):
                         embed.description = "This UID has already received the maximum likes today.\nPlease wait 24 hours and try again"
 
                     embed.set_footer(text=f"🔹 Requested by {ctx.author.display_name} • DEVOLOPED BY UNKNOWN X!TER")
-                    embed.set_image(url="")
+                    embed.set_image(url="https://ibb.co.com/TM4kTbck")
                     file = discord.File("assets/banned.gif", filename="banned.gif")
                     embed.set_image(url="attachment://banned.gif")
                     await ctx.send(embed=embed, mention_author=True, ephemeral=is_slash)
@@ -344,7 +344,7 @@ class LikeCommands(commands.Cog):
                     f"🔄 This will continue until the bot is restarted"
                 )
                 embed.set_footer(text="**DEVOLOPED BY UNKNOWN X!TER**")
-                embed.set_image(url="")
+                embed.set_image(url="https://ibb.co.com/TM4kTbck")
                 file = discord.File("assets/banned.gif", filename="banned.gif")
                 embed.set_image(url="attachment://banned.gif")
                 embed.description += "\n🔗 JOIN : https://discord.gg/MyBqsnzgAf"
