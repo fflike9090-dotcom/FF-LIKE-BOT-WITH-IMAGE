@@ -78,14 +78,14 @@ class LikeCommands(commands.Cog):
                     channel = self.bot.get_channel(channel_id)
                     if channel:
                         embed = discord.Embed(
-                            title="🔄 AUTO LIKE EXECUTED",
+                            title="🔄 AUTO LIKE SUCCESFULLY SENDED",
                             color=0x2ECC71 if data.get("status") == 1 else 0xE74C3C,
                             timestamp=datetime.now()
                         )
                         
                         if data.get("status") == 1:
                             # Create a more visually appealing embed for auto-like
-                            embed.title = "🔄 AUTO LIKE EXECUTED"
+                            embed.title = "🔄 AUTO LIKE SUCCESFULLY SENDED"
                             embed.description = (
                                 "✅ Auto-like delivered successfully!\n"
                                 "✨ Perfect execution!"
@@ -330,7 +330,7 @@ class LikeCommands(commands.Cog):
 
                 # Send confirmation embed
                 embed = discord.Embed(
-                    title="🔄 AUTO LIKE STARTED",
+                    title="🔄 AUTO LIKE ADDED SUCCESFULLY",
                     color=0x2ECC71,
                     timestamp=datetime.now()
                 )
@@ -346,8 +346,7 @@ class LikeCommands(commands.Cog):
                 embed.set_footer(text="**DEVOLOPED BY UNKNOWN X!TER**")
                 embed.set_image(url="https://ibb.co.com/TM4kTbck")
                 file = discord.File("assets/banned.gif", filename="banned.gif")
-                embed.set_image(url="attachment://banned.gif")
-                embed.description += "\n🔗 JOIN : https://discord.gg/MyBqsnzgAf"
+                embed.set_image(url="attachment://banned.gif
                 await ctx.send(embed=embed, mention_author=True, ephemeral=is_slash)
 
         except Exception as e:
